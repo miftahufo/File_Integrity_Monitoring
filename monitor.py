@@ -4,10 +4,10 @@ import time
 from watchdog.observers.polling import PollingObserver  # Gunakan PollingObserver
 from watchdog.events import FileSystemEventHandler
 
-# Path ke direktori web Anda
-WEB_DIR = "/home/sinida/public_html"  # Ganti dengan path yang benar
-# Path ke salinan aman dari file web Anda
-BACKUP_DIR = "/home/sinida/backup"   # Ganti dengan path yang benar
+# Path ke direktori web Public Anda
+WEB_DIR = "/home/Coba/public_html"  # Ganti dengan path yang benar
+# Path ke folder backup dari file web Anda
+BACKUP_DIR = "/home/Coba/backup"   # Ganti dengan path yang benar
 
 class WebMonitor(FileSystemEventHandler):
     def on_modified(self, event):
